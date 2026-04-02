@@ -1,10 +1,12 @@
-def entrance_fee(ages) -> int:
+def entrance_fee(ages: list) -> int:
     """
-    Calculates entrance fee for the amusement park.
-    Parameters :
-          ages : List of Ages
+    Calculates the total entrance fee for an amusement park based on a list of ages.
+
+    Args:
+        ages (list): A list of integers representing each visitor's age.
+
     Returns:
-        int: The total entrance fee.
+        int: The sum of all entrance fees.
     """
 
     kid, adult, senior = 5000, 10000, 7000
