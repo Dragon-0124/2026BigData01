@@ -19,3 +19,12 @@ print(array05)
 
 array06 = np.random.rand(2, 3)
 print(array06)
+
+# array07 = np.random.random((2, 3, 3))
+array07 = np.random.random((4, 2))
+print(array07)
+print(array07.shape, array07.dtype, array07.ndim, array07.size)
+print(array07.T)
+
+array08 = np.linspace(0, 10, 5)
+print(array08)
