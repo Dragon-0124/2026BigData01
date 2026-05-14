@@ -1,11 +1,7 @@
-import pandas as pd
+import seaborn as sns
 
-df = pd.DataFrame({'국':[7, 6, 7], '영':[2, 4, 8], '수':[3, 5, 9], '화':[10, 3, 11]}, index=[1, 2, 3])
+mpg = sns.load_dataset('mpg')
 
-print(df)
-
-print("----------------------------------")
-
-print(df.nunique())
-
-print(len(df))
+print(mpg.info())
+print(mpg['model_year'].value_counts().sort_values(ascending=False))
+print(mpg.sort_values('mpg',ascending=False))
