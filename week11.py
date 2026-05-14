@@ -1,7 +1,11 @@
 import seaborn as sns
 
-mpg = sns.load_dataset('mpg')
+ex = sns.load_dataset('exercise')
 
-print(mpg.info())
-print(mpg['model_year'].value_counts().sort_values(ascending=False))
-print(mpg.sort_values('mpg',ascending=False))
+# print(ex.info())
+# print(ex.head(10))
+
+# print(ex['kind'].value_counts())
+# print(ex['time'].value_counts())
+# print(ex['diet'].value_counts())
+
