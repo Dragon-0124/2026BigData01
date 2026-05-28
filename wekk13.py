@@ -40,5 +40,13 @@ health_2020 = health[health['Year']==2020]
 # plt.show()
 
 # 국가 별 의료비 및 기대수명의 상관관계 (산점도)
-sns.relplot(data=health, x='Spending_USD' , y='Life_Expectancy', col='Country', col_wrap=3, kind='scatter', hue='Year', palette='Set1')
-plt.show()
+# sns.relplot(data=health, x='Spending_USD' , y='Life_Expectancy', col='Country', col_wrap=3, kind='scatter', hue='Year', palette='Set1')
+# plt.show()
+
+
+# print(health.sort_values('Year',ascending=False))
+# 2가지 기준으로 정렬(년도별 , 기대수명 내림차순)
+# print(health.sort_values(['Year','Life_Expectancy'],ascending=[False, False]))
+
+# 2가지 기준으로 정렬(년도별 , 기대수명 내림차순)후 상위 10개 데이터 출력
+# print(health.sort_values(['Year','Life_Expectancy'],ascending=[False, False]).head(10))
